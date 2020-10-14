@@ -1,0 +1,241 @@
+/* Main Button Area css
+============================================================================================ */
+.main_btn{
+	display: inline-block;
+	background: $baseColor;
+	padding: 0px 18px;
+	color: #fff;
+	font-family: $headingFont;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 48px;
+	border-radius: 0px;
+	outline: none !important;
+	box-shadow: none !important;
+	text-align: center;
+	border: 1px solid $baseColor;
+	cursor: pointer;
+	text-transform: capitalize;
+	@include transition;
+	&:hover{
+		background: #fff;
+		color: $baseColor;
+		border: 1px solid $baseColor;
+	}
+}
+
+.main_btn_light{
+	display: inline-block;
+	border: 1px solid $baseColor;
+	padding: 0px 18px;
+	color: #33363e;
+	font-family: $headingFont;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 48px;
+	border-radius: 0px;
+	outline: none !important;
+	box-shadow: none !important;
+	text-align: center;
+	border: 1px solid $baseColor;
+	cursor: pointer;
+	text-transform: capitalize;
+	@include transition;
+	&:hover{
+		background: $baseColor;
+		color: #fff;
+	}
+}
+.main_btn2{
+	display: inline-block;
+	background: #fff;
+	padding: 0px 32px;
+	color: $dip;
+	font-family: $headingFont;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 48px;
+	border-radius: 5px;
+	outline: none !important;
+	box-shadow: none !important;
+	text-align: center;
+	border: 1px solid #fff;
+	cursor: pointer;
+	@include transition;
+	&:hover{
+		background: $baseColor;
+		color: #fff;
+		border-color: $baseColor;
+	}
+}
+.submit_btn{
+	width: auto;
+	display: inline-block;
+	background: $baseColor;
+	padding: 0px 50px;
+	color: #fff;
+	font-family: $headingFont;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 50px;
+	border-radius: 5px;
+	outline: none !important;
+	box-shadow: none !important;
+	text-align: center;
+	border: 1px solid $baseColor;
+	cursor: pointer;
+	@include transition;
+	&:hover{
+		background: transparent;
+		color: $baseColor;
+	}
+}
+
+.white_bg_btn{
+	display: inline-block;
+	background: #f9f9ff;
+	padding: 0px 35px;
+	color: $dip;
+	font-family: $headingFont;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 34px;
+	border-radius: 0px;
+	outline: none !important;
+	box-shadow: none !important;
+	text-align: center;
+	border: 1px solid #eeeeee;
+	cursor: pointer;
+	@include transition;
+	&:hover{
+		background: $baseColor;
+		color: #fff;
+		border-color: $baseColor;
+	}
+}
+.black_btn{
+	padding: 0px 44px;
+	line-height: 50px;
+	background: $dip;
+	color: $baseColor;
+	display: inline-block;
+	border-radius: 5px;
+	font-size: 13px;
+	font-family: $headingFont;
+	font-weight: 500;
+	@include transition;
+	&:hover{
+		background: $baseColor;
+		color: $dip;
+	}
+}
+
+
+.play_btn a {
+	color: #fff;
+	border: 2px solid #fff;
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 29px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.link_one{
+	font-size: 15px;
+	font-family: $headingFont;
+	color: #33363e;
+	letter-spacing: 1.5px;
+	position: relative;
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -14px;
+		height: 2px;
+		width: 40px;
+		background: #33363e;
+	}
+	&:hover{
+		&:after{
+			width: 100%;
+			background: $baseColor;
+			@include transition;
+		}
+	}
+}
+/*=================== custom button rule start ====================*/
+
+.button{
+	font-family: $headingFont;
+	display: inline-block;
+	border: 1px solid transparent;
+	font-size: 15px;
+	font-weight: 500;
+	padding: 12px 54px;
+	border-radius: 4px;
+	color: $white;
+	border: 1px solid $baseColor;
+	text-transform: uppercase;
+	background: $baseColor;
+	cursor: pointer;
+	@include transition;
+
+	@media(max-width: 767px){
+		font-size: 13px;
+		padding: 9px 24px;
+	}
+
+	&:hover{
+		background: $baseColor;
+		color: $white;
+	}
+
+
+	&-link{
+		letter-spacing: 0;
+		color: #3b1d82;
+		border: 0;
+		padding: 0;
+
+		&:hover{
+			background: transparent;
+			color: #3b1d82;
+		}
+	}
+
+	&-header{
+		background: $baseColor;
+		color: $white;
+		border-color: $baseColor;
+
+		&:hover{
+			background: #b8024c;
+			color: $white;
+		}
+	}
+
+	&-contactForm{
+
+		background: $baseColor;
+		color: $white;
+		border-color: $baseColor;
+		padding: 12px 25px;
+
+		&:hover{
+			border-color: $title-color;
+			background: $title-color;
+			color: $white;
+		}
+	}
+}
+
+
+/* End Main Button Area css
+============================================================================================ */

@@ -1,0 +1,75 @@
+/* About Area css
+============================================================================================ */
+.about-area{
+	background: $bg_one;
+	background-image: url(../img/background/bg_1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	padding-top: 400px;
+	padding-bottom: 110px;
+	margin-top: -180px;
+	@media ( max-width: 991px){
+			padding-top: 250px;
+		}
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		width: 50%;
+		top: 0;
+		background: url(../img/banner/about1.png);
+		backgroundsize: auto;
+		z-index: 11;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		@media ( max-width: 991px){
+			display: none;
+		}
+
+
+	}
+	.about-content{
+		@media (min-width: 1199px) and (max-width: 1199px){
+			padding-top: 30px;
+		}
+		@media (max-width: 991px){
+			margin-top: 0;
+			padding-left: 0;
+			h4 br{
+				display: none;
+			}
+			p br{
+				display: none;
+			}
+			
+		}
+		h4{
+			font-size: 36px;
+			color: $heading;
+			font-family: $headingFont;
+			margin-bottom: 32px;
+			line-height: 46px;
+		}
+		h6{
+			font-size: 16px;
+			font-weight: 400;
+			color: $baseColor;
+			line-height: 25px;
+			margin-bottom: 25px;
+		}
+		p{
+			font-size: 15px;
+			margin-bottom: 30px;
+			line-height: 26px;
+		}
+		
+	}
+}
+
+@media (max-width: 991px){
+
+}
+
+

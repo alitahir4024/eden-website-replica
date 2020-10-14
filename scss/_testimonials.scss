@@ -1,0 +1,108 @@
+
+/* testimonial section css start
+============================================================================================ */
+.testimonial{
+    background: #f7f7f7;
+    background-image: url('../img/background/bg_2.png');
+    background-size: cover;
+    padding: 460px 0 95px 0;
+    position: relative;
+    margin-top: -335px;
+    
+
+}
+
+
+.testi_slider {
+    // margin: auto;
+    max-width: 950px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    .testi_item {
+        text-align: center;
+        img {
+            width: auto;
+            margin: auto;
+        }
+
+        p{
+
+
+            i,span{
+                font-size: 30px;
+                color: #525869;
+                position: relative;
+                bottom: 4px;
+                right: 3px;
+            }
+        }
+
+        &_content{
+            padding: 25px 10px;
+
+            @media(min-width: 991px){
+                padding: 25px 45px;
+            }
+
+            h4{
+                font-size: 20px;
+                color: $heading;
+                font-weight: 400;
+                margin-bottom: 0;       
+            }
+            p{
+                font-style: italic;
+                font-size: 20px;
+                margin-bottom: 45px;
+            }
+
+        }
+        .testimonial_image{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-bottom: 18px;
+
+        }
+    }
+
+    .owl-dots{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: -45px;
+        margin: 0;
+
+        @media(min-width: 991px){
+            bottom: -95px;
+        }
+
+        .owl-dot{
+
+            span{
+                background: rgba(255, 255, 255, .6);
+                margin: 5px 10px;
+            }
+
+            &.active{
+
+                span{
+                    width: 12px;
+                    height: 12px;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+
+.pricing-relative{
+    position: relative;
+    z-index: 50;
+}
+
+/* testimonial section css end
+============================================================================================ */

@@ -1,0 +1,162 @@
+.list{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration:none;
+	transition: all 0.3s ease-in-out;
+	&:hover, &:focus{
+		text-decoration:none;
+		outline: none;
+	}
+}
+.row.m0{
+	margin: 0px;
+}
+
+.no-margin{
+	margin-right:0;
+	margin-left:0;
+}
+
+
+.area-heading{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 45px;
+	h3{
+		color: $dip;
+		font-size: 36px;
+		font-weight: 600;
+		position: relative;
+		margin-bottom: 23px;
+		&:after{
+			content: '';
+			position: absolute;
+			width: 70px;
+			height: 2px;
+			background: $baseColor;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -10px;
+
+		}
+
+	}
+	p{
+		color: $dip2;
+	}
+}
+
+body{
+	line-height: 27px;
+	font-size: 14px;
+	font-family: $paraFont;
+	font-weight: normal;
+	color: $pfont;
+}
+h1, h2, h3, h4, h5, h6{ 
+	font-family: $headingFont; 
+	font-weight: bold;
+}
+
+button:focus{
+	outline: none;
+	box-shadow: none;
+}
+.p_120{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.pad_top{
+	padding-top: 120px;
+}
+.mt-25{
+	margin-top: 25px;
+}
+.container{
+	@media(min-width:1200px){
+		max-width: 1170px;
+	}
+}
+.area-padding{
+	padding: 130px 0;
+}
+.area-padding-top{
+	padding-top: 100px;
+}
+.area-padding-bottom{
+	padding-bottom: 100px;
+}
+.background_one{
+	background: $bg_one;
+}
+.border-bottom{
+	border-bottom: 1px solid $border;
+}
+.dark_font{
+	color: #0a0a0a!important;
+}
+.m_b_30{
+	margin-bottom: 30px;
+}
+.font-20{
+	font-size: 20px!important;
+	line-height: 26px!important;
+}
+.pad_25{
+	padding: 25px!important;
+}
+.padd_left_0{
+	padding-left: 0!important;
+}
+.padd_right_0{
+	padding-right: 0!important;
+}
+.background_one{
+	background: $bg_one;
+}
+img{
+	max-width: 100%;
+}
+ul{
+	list-style: none;
+	padding:0;
+}
+@media(min-width: 1620px){
+	.box_1620{
+		max-width: 1650px;
+		margin: auto;
+	}
+}
+
+
+/* Main Title Area css
+============================================================================================ */
+.main_title{
+	text-align: center;
+	max-width: 680px;
+	margin: 0px auto 75px;
+	h2{
+		font-family: $paraFont;
+		font-size: 36px;
+		color: $dip;
+		margin-bottom: 12px;
+	}
+	p{
+		font-size: 14px;
+		font-family: $headingFont;
+		font-weight: normal;
+		line-height: 24px;
+		color: $pfont;
+		margin-bottom: 0px;
+	}
+}
+
+/* End Main Title Area css
+============================================================================================ */
+
+
+

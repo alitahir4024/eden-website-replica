@@ -1,0 +1,181 @@
+/*============== footer-area css ===============*/
+
+
+.footer-area {
+    padding-top: 115px;
+    // background: url(../img/footer-bg.png) no-repeat center;
+    @media (max-width: 991px) {
+        padding: 60px 0px;
+    }
+    .single-footer-widget {
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+
+        p{
+            color: #888888;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: $dip;
+            @media (max-width: 1024px) {
+                font-size: 20px;
+            }
+            @media (max-width: 991px) {
+                margin-bottom: 15px;
+            }
+        }
+        ul {
+            li {
+                margin-bottom: 10px;
+                a {
+                    @include transition();
+                    color: #888888;
+                    &:hover {
+                        color: $baseColor;
+                    }
+                }
+            }
+        }
+        .form-wrap {
+            margin-top: 25px;
+
+            .info{
+                color: $baseColor;
+            }
+        }
+        input {
+            height: 40px;
+            border: 1px solid #eeeeee;
+            width: 67% !important;
+            font-weight: 400;
+            background: #fff;
+            padding-left: 20px;
+            border-radius: 0;
+            font-size: 14px;
+            padding: 10px 22px;
+            border-radius: 25px;
+            color: #888888;
+            margin-right: -25px;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            @include placeholder {
+                font-size: 14px;
+                padding-left: 10px;
+                color: #888888;
+            }
+        }
+        .click-btn {
+            border-radius:24px;
+            padding: 6px 21px 4px 14px;
+            border: 0;
+            background: $baseColor;
+            color: $white;
+            position: relative;
+            left: 0;
+            text-transform: capitalize;
+            z-index: 999;
+
+            i,span{
+                font-size: 18px;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+
+        }
+    }
+    .footer-address{
+        span{
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+    .footer-logo{
+        margin-top: 28px;
+        display: inline-block;
+    }
+    .footer-bottom {
+        border-top: 1px solid $border;
+        margin-top: 51px;
+        padding: 20px 0;
+        @media (max-width: 991px) {
+            margin-top: 20px;
+        }
+        p {
+            color: #777777;
+
+            a{
+                color: $baseColor;
+            }
+        }
+        .footer-social {
+            text-align: center;
+            @media (max-width: 991px) {
+                text-align: left;
+                margin-top: 30px!important;
+            }
+            a {
+                margin-left: 3px;
+                width: 32px;
+                color: #8f919c;
+                display: inline-grid;
+                text-align: center;
+                height: 32px;
+                align-content: center;
+                @include transition();
+                &:hover {
+                    color: $baseColor;
+                }
+
+                i,span{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .header_area .navbar-collapse {
+        padding: 15px 0px;
+    }
+}
+@media (max-width: 767px){
+
+    .home_banner_area .banner_inner .banner_content span::after {
+        display: none;
+    }
+    .home_banner_area .banner_inner .banner_content h3 {
+        font-size: 33px;
+    }
+    .home_banner_area .banner_inner .banner_content h3 br{
+        display: none;
+    }
+    .home_banner_area .banner_inner .banner_content .main_btn {
+        margin-top: 14px;
+    }
+    .home_banner_area .banner_inner .banner_content span {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    .footer-area {
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+    .footer-bottom {
+        margin-top: 35px;
+        padding-top: 40px;
+    }
+    .footer-area .footer-bottom .footer-social {
+        margin-top: 15px !important;
+    }
+}

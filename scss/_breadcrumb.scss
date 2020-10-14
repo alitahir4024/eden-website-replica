@@ -1,0 +1,281 @@
+/* Home Banner Area css
+============================================================================================ */
+/* 5. Banner */
+.banner-area {
+	background: $baseColor;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	@media (max-width: 767px){
+		min-height: 600px;
+	}
+
+
+	h1{
+		font-size: 45px;
+		color: #000;
+		font-weight: 600;
+		font-family: $headingFont;
+		margin-bottom: 30px;
+		@media (max-width: 767px){
+			font-size: 26px;
+		}
+	}
+	p{
+		margin-bottom: 50px;
+
+		@media (min-width: 576px) and (max-width: 767px){
+			padding-right: 113px;
+		}
+	}
+	.main_btn{
+		margin-right: 10px;
+		@media (max-width: 575px){
+			margin-bottom: 10px;
+		}
+	}
+
+}
+
+
+
+
+.blog_banner{
+	min-height: 660px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	margin-bottom: 0px;
+	.banner_inner{
+		background: #04091e;
+		position: relative; 
+		overflow: hidden;
+		width: 100%;
+		min-height: 660px;
+		z-index: 1;
+		.overlay{
+			background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+			opacity: .5;
+			height: 125%;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			z-index: -1;
+		}
+		.blog_b_text{
+			max-width: 700px;
+			margin: auto;
+			color: #fff;
+			h2{
+				font-size: 60px;
+				font-weight: bold;
+				font-family: $paraFont;
+				line-height: 66px;
+				margin-bottom: 15px;
+			}
+			p{
+				font-size: 16px;
+				margin-bottom: 35px;
+			}
+			.white_bg_btn{
+				line-height: 42px;
+				padding: 0px 45px;
+			}
+		}
+	}
+}
+
+.banner_box{
+	max-width: 1620px;
+	margin: auto;
+}
+
+.banner_area{
+	position: relative;
+	z-index: 1;
+	.banner_inner{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		min-height: 110px;
+		background: $baseColor;
+		z-index: 1;
+		background-size:cover;
+		.banner_content{
+			h2{
+				color: $white;
+				font-size: 27px;
+				font-family: $headingFont;
+				margin-bottom: 0;
+				font-weight: bold;
+			}
+			p{
+				color: #666666;
+				font-size: 15px;
+			}
+			.page_link{
+				padding: 25px;
+				display: inline-block;
+				a{
+					font-size: 15px;
+					color: $white;
+					font-family: $paraFont;
+					margin-right: 7px;
+					position: relative;
+					font-weight: 500;
+					&:before{
+						content: "/";
+						position: absolute;
+						right: -8px;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+					&:last-child{
+						margin-right: 0px;
+						&:before{
+							display: none;
+						}	
+					}
+					&:hover{
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* End Home Banner Area css
+============================================================================================ */
+
+
+
+/* banner section start
+============================================================================================ */
+.hero-banner{
+	position: relative;
+	padding: 70px 0;
+	// height: 400px;
+	background: $bg_one;
+	background-size: cover;
+	// z-index: 2;
+
+	@media(min-width: 768px){
+		padding: 150px 0;
+	}
+
+	@media(min-width: 1200px){
+		padding: 110px 0;
+	}
+
+	&-sm{
+		padding-top: 80px;
+		padding-bottom: 80px;
+
+		@media(min-width: 992px){
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+	}
+
+	h1{
+		color: $title-color;
+		margin-bottom: 25px;
+		font-size: 28px;
+
+		@media(min-width: 768px){
+			font-size: 60px;
+			margin-bottom: 45px;
+		}
+	}
+
+	h2{
+		font-size: 22px;
+		color: $title-color;
+		text-transform: capitalize;
+		margin-bottom: 0;
+
+		@media(min-width: 768px){
+			font-size: 42px;
+		}
+	}
+
+	p{
+		font-size: 22px;
+		color: $title-color;
+		margin-bottom: 0;
+	}
+}
+
+.hero-banner-icon{
+	color: $title-color;
+	display: inline-block;
+	// margin-bottom: 10px;
+
+	@media(min-width: 768px){
+		margin-bottom: 10px;
+	}
+
+	i,span{
+		font-size: 35px;
+
+		@media(min-width: 768px){
+			font-size: 60px;
+		}
+	}
+
+	[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+		font-size: 35px;
+
+		@media(min-width: 768px){
+			font-size: 60px;
+		}
+	}
+}
+/* banner section end
+============================================================================================ */
+
+
+
+/* breadcrumb section start
+============================================================================================ */
+.banner-breadcrumb{
+	display: inline-block;
+
+	.breadcrumb{
+		background: transparent;
+		padding: 0;
+
+		&-item{
+			padding: .1rem;
+
+			a{
+				text-transform: capitalize;
+				color: $title-color;
+			}
+
+			&+.breadcrumb-item::before{
+				color: $title-color;
+				padding-left: .2rem;
+				padding-right: .4rem;
+				// content: "-";
+			}
+
+			&.active{
+				color: $title-color;
+			}
+		}
+	}
+	.breadcrumb-item{
+		a{
+			&:hover{
+				color: $baseColor;
+			}
+		}
+	}
+
+}
+/* breadcrumb section end
+  ============================================================================================ */

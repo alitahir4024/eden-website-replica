@@ -1,0 +1,196 @@
+
+/* Category Area css
+======================================================================= */
+
+
+.single-category {
+	background: #fff;
+	margin-bottom: 20px;
+	.short_details {
+		margin-top: -92px;
+		right: -3%;
+		width: 94%;
+		padding: 30px;
+		z-index: 555;
+		position: relative;
+		background: #fff;
+		@include transition();
+		@media ( max-width: 1199px){
+			padding: 15px;
+
+		}
+		a {
+			color: $dip;
+			font-weight: 600;
+			&:hover{
+				color: $baseColor;
+			}
+		}
+		h4{
+			font-size: 20px;
+		}
+	}
+	.thumb {
+		overflow: hidden;
+		position: relative;
+		img {
+			width: 100%;
+			@include transition();
+		}
+	}
+	.meta-bottom {
+		margin-bottom: 15px;
+		a {
+			display: inline-block;
+			color: $pfont;
+			position: relative;
+			font-size: 13px;
+			text-transform: uppercase;
+			@include transition();
+			i {
+				margin-right: 5px;
+			}
+			&:hover {
+				color: $baseColor;
+			}
+			margin-right: 12px;
+		}
+	}
+	.meta-top {
+		margin-bottom: 6px;
+		a {
+			display: inline-block;
+			font-size: 11px;
+			color: $baseColor;
+			text-transform: uppercase;
+			position: relative;
+			font-weight: 600;
+			font-family: $paraFont;
+			@include transition();
+			&:hover {
+				color: $baseColor;
+			}
+
+		}
+	}
+	&.small{
+
+		.short_details {
+			margin-top: 0;
+			right: 0;
+			width: 100%;
+			padding: 10px;
+
+
+
+		}
+		.thumb {
+			overflow: hidden;
+
+		}
+		.meta-bottom {
+			margin-bottom: 15px;
+			a {
+				display: inline-block;
+				color: $pfont;
+				position: relative;
+				font-size: 13px;
+				text-transform: uppercase;
+				@include transition();
+				i {
+					margin-right: 5px;
+				}
+				&:hover {
+					color: $baseColor;
+				}
+				margin-right: 12px;
+			}
+		}
+		.meta-top {
+			margin-bottom: 6px;
+			a {
+				display: inline-block;
+				font-size: 11px;
+				color: $baseColor;
+				text-transform: uppercase;
+				position: relative;
+				font-weight: 600;
+				font-family: $paraFont;
+				@include transition();
+				&:hover {
+					color: $baseColor;
+				}
+
+			}
+		}
+		h4 {
+			font-size: 20px;
+			margin-bottom: 10px;
+			font-weight: 600;
+			line-height: 27px;
+			@include transition();
+			@media(max-width: 1199px) {
+				font-size: 18px;
+			}
+			@media(max-width: 991px) {
+				margin-bottom: 8px;
+			}
+
+		}
+
+	}
+	&:hover {
+		img {
+			transform: scale(1);
+		}
+	}
+	
+
+
+}
+
+.category-page{
+	.main_btn{
+		display: inline-block;
+		background: $baseColor;
+		padding: 0px 18px;
+		color: #fff;
+		font-family: $paraFont;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 48px;
+		border-radius: 0px;
+		outline: none !important;
+		box-shadow: none !important;
+		text-align: center;
+		border: 1px solid $baseColor;
+		cursor: pointer;
+		text-transform: capitalize;
+		margin-top: 15px;
+		@include transition;
+		&:hover{
+			background: #fff;
+			color: $baseColor;
+			border: 1px solid $baseColor;
+		}
+		.ti-angle-double-right {
+			font-size: 11px;
+		}
+	}
+
+
+}
+
+.single-category .meta-top a:first-child{
+	margin-right: 3px;
+}
+.single-category .meta-top a:last-child{
+	margin-left: 3px;
+}
+
+
+
+
+
+
+
