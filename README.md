@@ -21,4 +21,4 @@ If you would like to enter streets of the online world with a bang, Eden is the 
 
 ## Project Preview:
 
-(https://ali-tahir4024.github.io/eden-website-replica/)
+[Eden Website Template](https://ali-tahir4024.github.io/eden-website-replica/)
